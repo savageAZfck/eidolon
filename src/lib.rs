@@ -224,6 +224,7 @@ impl DiffReport {
 /// - `chain_id`/`chain_tip` anchor the report to a real chain head.
 /// - `entries` is the forked slice (ordered).
 /// - `actual`/`alternate` are the two deterministic evaluation functions.
+#[allow(clippy::too_many_arguments)]
 pub fn replay_diff(
     issuer: &Identity,
     chain_id: &str,
